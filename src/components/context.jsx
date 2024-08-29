@@ -82,8 +82,8 @@ useGSAP(()=>{
 		scrollTrigger:{
 			trigger: article,
 			pin:true,
-			start:'top +=48',
-			end:'bottom bottom',
+			start:'top +=32',
+			end:'bottom 90%',
 			endTrigger: articles[2],
 			pinSpacing:false
 		},

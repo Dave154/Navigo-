@@ -4,6 +4,7 @@
   --dim_txt:rgba(0,0,0,.3);
   --dim_bg:rgba(220, 220, 220, .2);;
   --font1:sans-serif;
+  --title_size:3rem;
  font1: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-synthesis: none;
@@ -78,7 +79,7 @@ section{
   display: grid;
 }
 .title{
-  font-size: 3rem;
+  font-size: var(--title_size);
 }
 .sub_txt_title{
   font-size: 1.2rem;
@@ -98,8 +99,9 @@ section{
 
 /*MEDIAQUERIES*/
 @media (max-width:880px){
-  .title{
-  font-size: clamp(1rem, 10vw, 2rem);
+  :root {
+ 
+  --title_size:clamp(1rem, 10vw, 2rem);
 }
 .sub_txt_title{
   font-size: 1rem;

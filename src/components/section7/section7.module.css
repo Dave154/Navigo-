@@ -1,11 +1,10 @@
 .section7{
 	background: var(--dim_bg);
 	border-radius: 20px;
-	padding: 3rem;
+	padding: 3rem 1rem;
 	overflow: hidden;
 }
 .section7_container{
-	padding: 1rem;
 	overflow: hidden;
 	margin: 0 auto;
 	display:grid;
