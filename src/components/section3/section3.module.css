@@ -1,0 +1,41 @@
+.section3{
+padding: 148px 0;
+}
+.section3_container{
+ 	gap: 2.4rem;
+}
+.txt{
+
+}
+.txt_title{
+
+}
+.txt_deets{
+
+}
+.list_container{
+	grid-template-columns: 1fr 1fr;
+	padding: 1rem 0 ;
+	overflow: hidden;
+	    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+	   -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%);
+
+}
+.list{
+  width: 100%;
+  	animation: slide 20s infinite linear;
+}
+.list_item{
+	width: 180px;
+	min-width: 10rem;
+	padding: 2rem;
+
+}
+@keyframes slide {
+	to{
+		transform: translateX(-100%);
+	}
+	
+}
+
+

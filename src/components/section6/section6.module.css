@@ -1,0 +1,129 @@
+ .section6{
+ 	padding: 6rem 0;
+ 	overflow: hidden;
+ }
+
+ .section6_container{
+ 	gap: 4rem;
+ }
+
+ .section6_title p{
+ 	color: var(--dim_txt);
+ 	font-size: 1rem;
+
+ }
+ .section6_title h2{
+ 	margin-block: 2rem;
+ 	font-size:4.6rem;
+ 	font-weight: 550;
+ }
+ .slide{
+ 	width: 200%;
+ 	gap: 1rem;
+ 	grid-template-columns: 1fr 1fr;
+ 	overflow: hidden;
+	 mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%);
+	-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%);
+ }
+ .list{
+
+ 	gap: 1rem;
+ 	animation: slide 20s infinite linear;
+ }
+ .list_item{
+ 	min-width: 15rem;
+ 	border-radius: 2rem;
+ 	overflow: hidden;
+ 	position: relative;
+ }
+ .list_item_content{
+ 	padding: 1rem;
+ 	position: absolute;
+ 	inset: 0;
+ 	color: var(--primary);
+ 	background: rgba(0, 0, 0, .2);
+ }
+ .category p{
+ 	display: inline;
+ 	text-align: center;
+ 	background:rgba(0, 0, 0, 0.12);
+ 	backdrop-filter: blur(8px);
+ 	padding: .3rem 1rem;
+ 	font-size: 1.3rem;
+ 	border-radius: 1rem;
+ }
+ .base{
+ 	align-self: flex-end;
+ 	gap: .5rem;
+ }
+ .base p{
+ 	font-size: 1.3rem;
+ 	color: rgba(255, 250, 250, .5);
+ }
+ .bal{
+ 	margin-bottom: 10%;
+ }
+ .base h3{
+ 	font-weight: 500;
+ 	position: relative;
+ }
+ .usd{
+ 	font-size: clamp(1rem, 4vw, 4rem);
+ }
+ .eth{
+ 	font-size: clamp(1rem , 4vw, 2rem);
+ }
+ .account{
+ 	backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.12);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 42px;
+  font-size: 1.3rem;
+  position: relative;
+ }
+ .account:after{
+ 	position: absolute;
+ 	content: '';
+ 	width: 2rem;
+ 	left: 5%;
+ 	top: 50%;
+ 	box-shadow: inset -1px -1px 8px 4px rgba(255, 255, 255, .7);
+ 	transform: translate(0%,-50%);
+ 	aspect-ratio: 1/1;
+ 	border-radius: 50%;
+/* 	background: var(--primary);*/
+ }
+ .base h3{
+ 	position: relative;
+ }
+ .base h3:after{
+ 	position: absolute;
+ 	right: 1;
+ 	top: 0;
+ 	font-size: 1rem;
+ }
+ .usd:after{
+ 	content: 'usd';
+ }
+ .eth:after{
+ 	content: 'eth';
+ }
+ @keyframes slide {
+ 	to {
+ 		transform: translate(-100%);
+ 	}
+ }
+
+
+ @media (max-width:880px){
+ .section6_title h2{
+ 	font-size: clamp(1rem, 11vw, 4.5rem);
+ }
+
+}
+
+@media (max-width:500px){
+ 
+}
