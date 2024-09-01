@@ -28,9 +28,9 @@ const menu=[
 const Header=()=>{
 	return <header className={styles.header}>
 		<nav className={`${styles.nav} ${'flex'}`}>
-			<div className={`${styles.logo} ${'flex'}`}>
-				<i className={styles.logo_img}><img src={logo} alt=""/></i>
-				<h2 className={styles.logo_name}>Navigo</h2>
+			<div className={`${styles.logo} ${'logo'} ${'flex'}`}>
+				<i className={`${styles.logo_img} ${'logo_img'}`}><img src={logo} alt=""/></i>
+				<h2 className={`${styles.logo_name} ${'logo_name'}`}>Navigo</h2>
 			</div>
 
 			<div className={styles.menu}>

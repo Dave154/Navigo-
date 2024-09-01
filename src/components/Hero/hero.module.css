@@ -1,7 +1,6 @@
 .hero{
 height: 600px;
 margin-bottom:15rem;
-
 }
 .hero_container{
 	display: flex;
@@ -10,13 +9,12 @@ margin-bottom:15rem;
 	height: 100%;
 	position: relative;
 }
-.hero_content{
 
-}
-
-.hero_content .main_txt{
+ .main_txt{
 	width: 100%;
 	max-width: 70rem;
+	position: relative;
+/*	margin-bottom:1rem;*/
 }
 
 .hero_title{
@@ -56,7 +54,6 @@ position: relative;
 }
 .hero_sec3{
    justify-self: flex-end;
-
 }
 
 .hero_sec2{
@@ -85,10 +82,11 @@ font-weight: 800;
 	right: -15%;
 
 }
+
 .absolute_container{
 	display: grid;
 	place-content: center;
-	width: clamp(5rem, 7vw, 6rem);
+	width: clamp(3rem, 8vw, 5rem);
 	aspect-ratio: 1/1;
 	padding: .1rem;
 	background: var(--primary);
@@ -100,7 +98,7 @@ font-weight: 800;
 	align-items: flex-end;
 }
 .anim_in>span{
-	transform: translate(40%,10%) rotate(15deg);
+	transform: translate(0%,10%) rotate(15deg);
 }
 .anim_out:after{
 	background:linear-gradient(rgba(0, 0, 0, .7) ,transparent); ;
@@ -109,13 +107,13 @@ font-weight: 800;
 	transform: translate(150%,-100%) rotate(-15deg);
 }
 .bx1 .abs:nth-of-type(2){
-	transform: translate(50%,-150%) rotate(25deg);
+	transform: translate(10%,-150%) rotate(25deg);
 }
 .bx2 .abs:nth-of-type(1){
 	transform: translate(135%,100%) rotate(-15deg);
 }
 .bx2 .abs:nth-of-type(2){
-	transform: translate(250%,150%) rotate(25deg);
+	transform: translate(235%,150%) rotate(25deg);
 }
 
 .hero_sec3 .absolute{
@@ -180,10 +178,10 @@ font-weight: 800;
 	justify-content: center;
 }
 	.hero_title{
-		font-size: clamp(4rem, 16vw, 10rem);
+		font-size: clamp(3rem, 15vw, 15rem);
 	}
 	.anim_container{
-		width: clamp(10rem, 25vw, 15rem);
+		width: clamp(7rem, 23vw, 15rem);
 	}
 
 .sub_txt h5{
@@ -201,11 +199,15 @@ font-weight: 800;
 
 
 @media (max-width:500px){
-		.sub_txt{
-		max-width: none;
-		text-align: center;
-		align-items: center !important;
+	.hero_content{
+	width: 100%;
+}
+.sub_txt{
+ max-width: none;
+ text-align: center;
+ align-items: center !important;
 
 }
+
 }
 

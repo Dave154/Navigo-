@@ -30,8 +30,8 @@ const list =[
 
 const Section7 =()=>{
     const {section7Ref}=useGlobe()
-	return <section className={styles.section7}>
-	  <div className={`${styles.section7_container}`} ref={section7Ref}>
+	return <section className={styles.section7} ref={section7Ref} >
+	  <div className={`${styles.section7_container}`} >
 	  	{list.map((item,i)=>{
 	  		const {title,sub_title,sub_deets,image}= item
 	  		return <article className={styles.content_container} key={i}>

@@ -33,11 +33,21 @@ useGSAP(()=>{
 	})
 
 })
+// Header
+useGSAP(()=>{
+	gsap.from('.logo',{
+		yPercent:-100,
+		opacity:0,
+		duration:2,
+		delay:1,
+		ease:'power3.out'
+	})
+})
 // Hero
 
 useGSAP(()=>{
 	const tl1=gsap.timeline()
-	tl1.from('.main_txt > div',{
+	tl1.from('.hero_content > .main_txt > div',{
 		yPercent:-100,
 		opacity:0,
 		duration:1,
@@ -47,7 +57,7 @@ useGSAP(()=>{
 
 		scrollTrigger:{
 			trigger:'.bx2 span',
-			scrub:1,
+			scrub:true,
 		},
 		xPercent:55,
 		yPercent: 100,
@@ -62,15 +72,16 @@ useGSAP(()=>{
 		yPercent:-60,
 		scale:.8,
 	})
-},{scope:main_txtRef})
+},{})
 
 useGSAP(()=>{
 	gsap.to('.phone_left',{
 		scrollTrigger:{
 			trigger:'.phone_left',
-			scrub:true,
+			start:'center center',
+			scrub:1,
 		},
-		yPercent: (windowWidth >= 500 ? 0: 50),
+		yPercent: 70,
 	})
 },{scope:section4Ref})
 
@@ -82,8 +93,9 @@ useGSAP(()=>{
 		scrollTrigger:{
 			trigger: article,
 			pin:true,
+			startTrigger: section7Ref.current,
 			start:'top +=32',
-			end:'bottom 90%',
+			end:'top top',
 			endTrigger: articles[2],
 			pinSpacing:false
 		},

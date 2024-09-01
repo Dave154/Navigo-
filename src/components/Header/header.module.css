@@ -8,12 +8,6 @@
 .menu_list{
 
 }
-.logo{
-  font-size: 1rem;
-}
-.logo_img{
- width:5rem;
-}
 
 .menu{
 	box-shadow: 1px 3px 10px 1px rgba(150, 150, 150, .1);
@@ -26,7 +20,7 @@
 	gap:30px;
 }
 .menu_list_item{
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	cursor: pointer;
 	color: rgba(0, 0, 0, .8);
 	font-weight: 400;
