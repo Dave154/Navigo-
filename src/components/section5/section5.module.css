@@ -29,7 +29,7 @@
 	display: flex;
 	align-items: center;
 	padding: .5rem 1rem;
-	border-radius: inherit;
+	border-radius: 10px;
 	background: #FBFBFB;
 	box-shadow: 5px 1px 5px var(--dim_bg);
 	justify-content: space-between;
@@ -55,13 +55,8 @@
  background: var(--primary);
  gap: 1rem;
 }
-.card1 .list_item:nth-of-type(1){
-	position: relative;
-	transform: rotate(5deg);
-	transform-origin: bottom right;
-	background: var(--primary);
-	box-shadow: 2px 4px 3px var(--dim_txt);
-}
+
+
 .card1 .list_item:nth-of-type(1):before{
 	content: attr(data-stuff);
 	position: absolute;
@@ -85,7 +80,6 @@
 }
 
 /* Card2 */
-
 .card2 .list_item{
 	margin: 0 auto;
 	padding-block: .7rem;
@@ -102,4 +96,19 @@
 .card2 .list_item:nth-of-type(3){
 	transform: scale(.7);
 	z-index: 1;
+}
+
+
+/*		CaRD 3*/
+
+.card3 .card_list{
+ background: var(--primary);
+ gap: 1rem;
+}
+.card3 .list_item:nth-of-type(2){
+	position: relative;
+	transform: translateX(-30px);
+	transform-origin: bottom right;
+	background: var(--primary);
+	box-shadow: 2px 4px 3px var(--dim_txt);
 }
