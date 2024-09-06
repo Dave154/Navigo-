@@ -26,7 +26,6 @@
                 name:'Paula Mora',
                 deets:'Pending Request',
                 price:25,
-                color:'green',
                 currency:'eurc',
             },
         ]
@@ -35,19 +34,25 @@
        <ul className={`${styles.card_list} ${'d_grid'}`}>
             {
                 list.map((item,index)=>{
-                    const {logo, name,abbv,price,color,currency}= item
+                    const {logo, name,deets,price,color,currency}= item
                     return <li className={`${styles.list_item}`}>
                     <div className='flex'>
                         <div className={styles.logo}>
                              <img src={logo} alt={logo}/>
                         </div>
                             <div className={styles.info}>
-                                <p>{abbv}</p>
-                                <p>{name}</p>
+                                <p className={styles.name}>{name}</p>
+                                <p className={styles.deets}>{deets}</p>
                             </div>
                     </div>
                     <div className={styles.price}>
-                        {price}
+
+                       <p className={`${styles.value} ${color==='green' && styles.green }`}>
+                           ${price}.00
+                       </p>
+                       <p className={styles.curr}>
+                           {currency}
+                       </p>
                     </div>
                     </li>
                 })

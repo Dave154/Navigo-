@@ -95,7 +95,8 @@ useGSAP(()=>{
 			pin:true,
 			startTrigger: section7Ref.current,
 			start:'top +=32',
-			end:'top top',
+			end:'top +=32',
+			markers:true,
 			endTrigger: articles[2],
 			pinSpacing:false
 		},

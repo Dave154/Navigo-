@@ -74,14 +74,14 @@ const btm_list=[
             <div className={`${styles.btm_image} ${'d_grid'}`}>
              
 
-      <div className=''>  
-            <img src={img2} alt={img1}/>
+                <div className=''>  
+                      <img src={img2} alt={img1}/>
 
-      </div>  
-      <div className=''>  
-            <img src={img1} alt={img2}/>
+                </div>  
+                <div className=''>  
+                      <img src={img1} alt={img2}/>
 
-      </div>  
+                </div>  
 
 
             </div>

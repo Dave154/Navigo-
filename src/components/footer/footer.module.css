@@ -9,9 +9,9 @@
 }
 .sec2{
 	width: 100%;
-	max-width: 50rem;
+	max-width: 40rem;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 4rem;
+	gap: 3rem;
 }
 .list_item{
 	color: var(--dim_txt);

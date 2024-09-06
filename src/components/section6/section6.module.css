@@ -26,13 +26,15 @@
 	-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%);
  }
  .list{
-
  	gap: 1rem;
  	animation: slide 20s infinite linear;
  }
  .list_item{
  	min-width: 20rem;
+    height: 30rem;
+    background: var(--dim_bg);
  	border-radius: 2rem;
+    height: 100%;
  	overflow: hidden;
  	position: relative;
  }

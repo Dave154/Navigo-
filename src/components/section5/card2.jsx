@@ -34,8 +34,8 @@
                              <img src={logo} alt={logo}/>
                         </div>
                             <div className={styles.info}>
-                                <p>{abbv}</p>
-                                <p>{name}</p>
+                                <p className={styles.name}>{name}</p>
+                                <p className={styles.abbv}>{abbv}</p>
                             </div>
                     </div>
                     <div className={styles.price}>

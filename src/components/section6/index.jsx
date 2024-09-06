@@ -74,7 +74,7 @@
     					const {image,category,usd,eth,account} = item
 
     					return <li className={styles.list_item} key={i}>
-    						<img src={image} alt={image}/>
+    						<img src={image} alt={image} loading='lazy'/>
     						 <div className={`${styles.list_item_content} ${'d_grid'}`}>
     						 	  <div className={styles.category}>
     						 	  	 <p>{category}</p>
