@@ -104,12 +104,12 @@
 }
 .card3 .list_item:nth-of-type(2){
 	position: relative;
-	transform: translateX(-35px);
+	transform: translateX(-38px);
 	box-shadow: 2px 4px 6px var(--dim_txt);
 	transform-origin: bottom right;
 }
 .card3 .list_item:nth-of-type(2) .price{
-	text-shadow: 60px 5px 3px ;
+	text-shadow: 68px 5px 3px ;
 }
 .info{
 	padding: .2rem;

@@ -5,23 +5,25 @@ import Sec2 from './sec2.jsx'
 import Sec3 from './sec3.jsx'
 import img1 from '../.././assets/btm_img1.png'
 import img2 from '../.././assets/btm_img2.png'
+import pad from '../.././assets/padlock.png'
+import cloud from '../.././assets/locked_bg.png'
 
 const list =[
       <Sec1/>, <Sec2/>, <Sec3/>
   ]
 const btm_list=[
   { 
-    icon:'',
+    icon: pad,
     title:'Full Non-Custodial control',
     deets:'Charter will never hold any of your funds. Your money is completely stored on your device and cloud.',
   },
   { 
-    icon:'',
+    icon:pad,
     title:'Passkeys',
     deets:'Charter stores your wallet cryptographic keys within your devices secure enclave.',
   },
   { 
-    icon:'',
+    icon: cloud,
     title:'Wallet Recovery',
     deets:'We provide you with multiple recovery methods utilizing your Cloud or Social Accounts.',
   }
@@ -58,7 +60,7 @@ const btm_list=[
                     const {icon,title,deets} = item
                     return <li className={styles.btm_list_item} key={i}>
                        <span className={styles.btm_icon}>
-                         <i>{icon}</i>
+                         <i><img src={icon} alt=""/></i>
                        </span>
                       <div className={styles.btm_list_content}>
                          

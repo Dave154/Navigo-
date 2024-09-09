@@ -1,20 +1,21 @@
     import styles from './section5.module.css'
     import naija from '../.././assets/naija.png'
-
+    import col from '../.././assets/col.jpg'
+    import cad from '../.././assets/cad.jpg'
 
     const list =[
     		{
-    			logo:'',
+    			logo:cad,
     			name:'Canadian Dollar',
     			abbv:'CAD',
     		},
     		{
-    			logo:'',
+    			logo:col,
     			name:'Colombian Pesos',
     			abbv:'COP',
     		},
     		{
-    			logo:'',
+    			logo:naija,
     			name:'Nigeria Naira',
     			abbv:'NRC',
     		},
@@ -29,7 +30,7 @@
                         <div className='flex'>
                             
    						<div className={styles.logo}>
-   							 <img src={naija} alt={naija}/>
+   							 <img src={logo} alt={logo}/>
    						</div>
                             <div className={styles.info}>
                                 <p>{abbv}</p>

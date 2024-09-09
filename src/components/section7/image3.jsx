@@ -1,6 +1,6 @@
 import styles from './section7.module.css'
  import image from '../.././assets/pin_img3.png'
-
+import barCode from '../.././assets/barCode.png'
 
 
   const Image3 =()=>{
@@ -15,6 +15,9 @@ import styles from './section7.module.css'
            Processing Fees
          </p>
       </div>
+         <i>
+           <img src={barCode} alt={barCode}/>
+         </i>
     	</div>
     </div>
   }

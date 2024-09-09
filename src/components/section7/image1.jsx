@@ -1,37 +1,35 @@
  import styles from './section7.module.css'
  import image from '../.././assets/pin_img1.png'
- import naija from '../.././assets/naija.png'
+    import naija from '../.././assets/naija.png'
+    import col from '../.././assets/col.jpg'
+    import cad from '../.././assets/cad.jpg'
 
 
 
 const list = [
 		{
-			logo: naija,
-			name:'Nigeria',
+			logo: col,
+			name:'Columbia',
 		},
 		{
 			logo: naija,
 			name:'Nigeria',
 		},
 		{
-			logo: naija,
-			name:'Nigeria',
+			logo: cad,
+			name:'Canada',
+		},
+	{
+			logo: col,
+			name:'Columbia',
 		},
 		{
 			logo: naija,
 			name:'Nigeria',
 		},
 		{
-			logo: naija,
-			name:'Nigeria',
-		},
-		{
-			logo: naija,
-			name:'Nigeria',
-		},
-		{
-			logo: naija,
-			name:'Nigeria',
+			logo: cad,
+			name:'Canada',
 		},
 	]
 

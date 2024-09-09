@@ -1,5 +1,8 @@
 import styles from './footer.module.css'
 import logo from '../../assets/logo.jpeg'
+import x from '../.././assets/x.jpg'
+import ln from '../.././assets/ln.jpg'
+import medium from '../.././assets/medium.jfif'
 
 
 const footerList=[
@@ -36,9 +39,10 @@ const footerList=[
 			<p>Enabling cost-efficient and instant payments, worldwide.</p>
 
 			<div className={`${styles.icons} ${'flex'}`}>
-				<span>X</span>	
-				<span>E</span>
-				<span>T</span>			
+				<span><img src={x} alt="x"/></span>	
+				<span><img src={ln} alt={ln}/></span>
+				<span><img src={medium} alt={medium}/></span>
+						
 			</div>
  		</article>
  		<article className={`${styles.sec2} ${'d_grid'}`}>

@@ -45,6 +45,7 @@
 	width: 2.5rem;
 	height: 2.5rem;
 	border-radius: 10px;
+	overflow: hidden;
 	 	box-shadow: 1px 4px 20px 1px rgba(10, 10, 10, .1);
 }
 
