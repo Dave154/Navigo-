@@ -7,6 +7,7 @@ import img1 from '../.././assets/btm_img1.png'
 import img2 from '../.././assets/btm_img2.png'
 import pad from '../.././assets/padlock.png'
 import cloud from '../.././assets/locked_bg.png'
+import thumb from '../.././assets/thumb.jfif'
 
 const list =[
       <Sec1/>, <Sec2/>, <Sec3/>
@@ -18,7 +19,7 @@ const btm_list=[
     deets:'Charter will never hold any of your funds. Your money is completely stored on your device and cloud.',
   },
   { 
-    icon:pad,
+    icon:thumb,
     title:'Passkeys',
     deets:'Charter stores your wallet cryptographic keys within your devices secure enclave.',
   },
