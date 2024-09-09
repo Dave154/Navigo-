@@ -1,3 +1,3 @@
 # Navigo 
 
-live link loading
+https://navigo-eight.vercel.app/
