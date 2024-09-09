@@ -66,8 +66,9 @@ const footerList=[
  			
  		</article>
  	</div>
- 		<div className={styles.footer_btm}>
+ 		<div className={`${styles.footer_btm} ${'flex'}`}>
  			<i>© 2024 Navigo Org.</i>
+ 			<p>	Made by  <span>{`${'<'}`}</span> Dave <span>{`${'/>'}`}</span></p>
  		</div>
  	</section>
  }

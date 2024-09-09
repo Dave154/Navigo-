@@ -56,7 +56,7 @@ body {
   color: var(--txt_color);
 }
 main{
-  padding: 0 .2rem;
+  padding: 0 .5rem;
   margin: 0 auto;
   max-width: 1400px;
 }

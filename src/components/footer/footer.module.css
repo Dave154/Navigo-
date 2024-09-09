@@ -21,10 +21,19 @@
 	font-weight: 600;
 }
 .footer_btm{
+	justify-content: space-between;
 	position: relative;
 	padding-block: 1rem;
 	color: var(--dim_txt);
 	margin-top: 10%;
+}
+.footer_btm p{
+	
+}
+.footer_btm p span {
+	color: chocolate;
+	font-weight: 900;
+	font-size: 1.2rem;
 }
 .footer_btm:before {
 	content: "";
