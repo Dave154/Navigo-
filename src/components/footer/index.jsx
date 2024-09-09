@@ -10,17 +10,17 @@ const footerList=[
 		},
 		{
 		cat: 'Business',
-		list:[ 'Wallet', 'Accounts', 'Transfers', 'Features','Security']
+		list:[ 'Features','Payments','Transfers']
 
 		},
 		{
 		cat: 'Resources',
-		list:[ 'Wallet', 'Accounts', 'Transfers', 'Features','Security']
+		list:[ 'Guides','Docs']
 
 		},
 		{
 		cat: 'About us',
-		list:[ 'Wallet', 'Accounts', 'Transfers', 'Features','Security']
+		list:[ 'Blog','Contact']
 
 		},
 	]
@@ -45,7 +45,7 @@ const footerList=[
  				{ 
  					footerList.map((obj,i)=>{
  						const {cat,list} = obj
- 						return <div className={styles.list_container}>
+ 						return <div className={styles.list_container} key={i}>
  							<p>{cat}</p>
  							<ul className={styles.list}>
 

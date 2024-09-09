@@ -1,11 +1,10 @@
- 
-.card_container{
+ .card_container{
 	gap: 20px;
 	place-items: center;
 	text-align: center;
 }
 .card_content{
-	padding: 2rem;
+	padding: 1rem;
 	width: 100%;	
  max-width: 30rem;
 }

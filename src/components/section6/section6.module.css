@@ -30,7 +30,7 @@
  	animation: slide 20s infinite linear;
  }
  .list_item{
- 	min-width: 20rem;
+ 	min-width: 18rem;
     height: 30rem;
     background: var(--dim_bg);
  	border-radius: 2rem;
@@ -70,10 +70,10 @@
  	position: relative;
  }
  .usd{
- 	font-size: clamp(1rem, 4vw, 4rem);
+ 	font-size: clamp(2rem, 4vw, 4rem);
  }
  .eth{
- 	font-size: clamp(1rem , 4vw, 2rem);
+ 	font-size: clamp(1.5rem , 4vw, 2rem);
  }
  .account{
  	backdrop-filter: blur(8px);
