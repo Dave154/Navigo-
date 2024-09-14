@@ -9,7 +9,7 @@ const Section2=()=>{
 	 		A wallet that can do more. — Built to be your new and only payments app ever.
 	 	</h3>
 
-   		<div className={styles.hand}>
+   		<div className={`${styles.hand} ${'hand'}`}>
    			<img src={image} alt=""/>
    		</div>
 

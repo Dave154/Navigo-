@@ -21,7 +21,7 @@
     		},
     	]
    const Card1=()=>{
-   	return <div className={`${styles.card_content} ${styles.card1}`}>
+   	return <div className={`${styles.card_content} ${styles.card1} ${'card1'}`}>
    		<ul className={`${styles.card_list} ${'d_grid'}`}>
    			{
    				list.map((item,index)=>{

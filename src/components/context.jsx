@@ -72,8 +72,26 @@ useGSAP(()=>{
 		yPercent:-60,
 		scale:.8,
 	})
-},{})
+	gsap.from(' .hero_content > .sub_txt',{
+		scrollTrigger:{
+			trigger:'.sub_txt',
+			start: 'top center',	
+		},
+		opacity:0,
+		duration:2,
+	})
+})
 
+
+useGSAP(()=>{
+	gsap.from('.hand',{
+		scrollTrigger:'.hand',
+		xPercent:50,
+		yPercent:20,
+		opacity:.1,
+		duration:2
+	})
+})
 useGSAP(()=>{
 	gsap.to('.phone_left',{
 		scrollTrigger:{
@@ -85,6 +103,49 @@ useGSAP(()=>{
 	})
 },{scope:section4Ref})
 
+
+useGSAP(()=>{
+	const list = gsap.utils.toArray('.card1 li')
+	gsap.from(list,{
+		scrollTrigger:{
+			trigger:list,
+		start:'center center',
+
+	},
+		opacity:0,
+		stagger:.4,
+		yPercent:-50,
+	})
+})
+useGSAP(()=>{
+	const list = gsap.utils.toArray('.card2 li')
+	gsap.from(list,{
+		scrollTrigger:{
+			trigger:list,
+		start:'center center',
+
+	},
+		opacity:0,
+		stagger:.4,
+		yPercent:-50,
+		width:0,
+	})
+})
+useGSAP(()=>{
+	const list = gsap.utils.toArray('.card3 li')
+	gsap.from(list,{
+		scrollTrigger:{
+			trigger:list,
+		start:'center center',
+
+	},
+		opacity:0,
+		stagger:.4,
+		xPercent:50,
+		duration:1.5,
+		ease: 'bounce.out'
+	})
+})
 useGSAP(()=>{
 	let articles =gsap.utils.toArray('article')
 	console.log(articles)

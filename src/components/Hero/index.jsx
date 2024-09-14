@@ -5,7 +5,7 @@ const Hero=()=>{
 		<div className={styles.hero_container}>
 			<div className={`${styles.hero_content} ${'d_grid'} ${'hero_content'}`}>
 			<Main_title/>
-			   <article className={`${styles.sub_txt} ${'flex'}`}>
+			   <article className={`${styles.sub_txt} ${'flex'} ${'sub_txt'}`}>
 					   	
 					   	<h5>
 					   		Experience a new affordable and efficient way to send and receive digital payments worldwide.
