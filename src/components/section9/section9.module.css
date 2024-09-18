@@ -54,6 +54,30 @@
    right: 0;
  }
 
+
+
+ .modal_container{
+  position: fixed;
+  background: var(--dim_bg);
+  inset: 0;
+  z-index: 99;
+  place-content: center;
+ }
+ .modal{
+  background: var(--dim_txt);
+  padding: 2rem;
+  border-radius: 20px;
+  transform: translateY(100%);
+  transition: transform .25s;
+ }
+ .modal_container.modal_container_hidden{
+  opacity: 0;
+  transition: opacity .1 3s
+
+ }
+ .modal_container_hidden .modal{
+  transform: translateY(0);
+ }
  @media (max-width:500px){
    .section9_content .txt{
  transform: scale(.95);

@@ -48,6 +48,7 @@
 	padding: 2rem;
 }
 .icons span{
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -55,7 +56,12 @@
 	height: 2.5rem;
 	border-radius: 10px;
 	overflow: hidden;
-	 	box-shadow: 1px 4px 20px 1px rgba(10, 10, 10, .1);
+	box-shadow: 1px 4px 20px 1px rgba(10, 10, 10, .1);
+	transition: transform .5s ease;
+}
+.icons span:hover{
+	transform: scale(1.1);
+	box-shadow: 1px 4px 20px 1px rgba(210, 108, 30, .7);
 }
 
 @media (max-width:880px){

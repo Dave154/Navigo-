@@ -1,7 +1,7 @@
 
 import React,{useContext} from 'react'
 const AppContext=React.createContext()
-import {useRef} from 'react'
+import {useRef,useState} from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
@@ -13,9 +13,27 @@ gsap.registerPlugin(ScrollTrigger)
 const windowWidth=window.outerWidth
 
 const AppProvider=({children})=>{
+	const [text,setText]=useState('')
+	const [isModal ,setIsModal] =useState(false)
 const main_txtRef=useRef(null)
 const section4Ref=useRef(null)
 const section7Ref=useRef(null)
+
+
+const handleChange =(e)=>{
+	setText(e.target.value)
+}
+const joinFunc=(e)=>{
+	e.preventDefault()
+	console.log(text)
+	setText('')
+	setIsModal(true)
+
+	setTimeout(()=>{
+		setIsModal(false)
+	},3000)
+
+}
 			// ANIMATIONS
 // GLOBAL
 useGSAP(()=>{
@@ -167,7 +185,7 @@ useGSAP(()=>{
 },{scope:section7Ref})
 
 
- 	return <AppContext.Provider value={{main_txtRef,section4Ref,section7Ref}}>
+ 	return <AppContext.Provider value={{main_txtRef,section4Ref,section7Ref,joinFunc,handleChange,text,isModal}}>
  		{children}
  	</AppContext.Provider>
 }

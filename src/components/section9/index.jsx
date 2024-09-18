@@ -1,7 +1,10 @@
 import styles from './section9.module.css'
 import Main_title from  '.././Hero/main_title.jsx'
-
+import {useGlobe} from '.././context.jsx'
+import Modal from './modal.jsx'
 const Section9 =()=>{
+	const {joinFunc,handleChange,text} =useGlobe()
+
 	return <section className={styles.section9}>
 
 		<div className={styles.section9_container}>
@@ -16,14 +19,14 @@ const Section9 =()=>{
 			 		<p>
 			 			Explore a new affordable and efficient way to send and receive digital payments globally, 
 			 		</p>
-			 		<form action="">
-			 			<input type="text" placeholder='Email'/>
+			 		<form action="" onSubmit={(e)=>joinFunc(e)}>
+			 			<input type="text" placeholder='Email' value={text} onChange={handleChange}/>
 			 			<button className='join_btn'>Join Waitlist</button>
 			 		</form>
 			 	</div>
 				</article>
+			<Modal/>
 			</div>
-		
 		</div>
 	</section>
 }

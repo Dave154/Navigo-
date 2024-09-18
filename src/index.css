@@ -49,7 +49,9 @@ button{
   outline: 0;
   background: transparent;
 }
-
+button{
+  cursor: pointer;
+}
 body {
   font-family: var(--font1);
   background: var(--primary);
@@ -120,7 +122,11 @@ section{
 
 
 
-
+.particles{
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+}
 
 /*MEDIAQUERIES*/
 @media (max-width:880px){
