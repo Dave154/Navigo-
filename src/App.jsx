@@ -72,7 +72,7 @@ function App() {
           value: "",
         },
         links: {
-          color: "#64380D",
+          color: "#977C66",
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -92,7 +92,7 @@ function App() {
           density: {
             enable: true,
           },
-          value: 120,
+          value: 200,
         },
         opacity: {
           value: 0.5,
