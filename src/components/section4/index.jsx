@@ -20,7 +20,7 @@
 	 		<p className={`${styles.sub_txt_title}  ${'sub_txt_title'}`}>
 	 			One app that takes care of it all
 	 		</p>
-	 		<p className={`${styles.sub_txt_deets} ${'sub_txt_deets'}`}>Whether you are looking to send money overseas or would like to diversify your digital portfolio, Charter wallet has you covered.</p>
+	 		<p className={`${styles.sub_txt_deets} ${'sub_txt_deets'}`}>Whether you are looking to send money overseas or would like to diversify your digital portfolio, Navigo wallet has you covered.</p>
 	 	</div>
 
 	 	<div className={`${styles.phone} ${'d_grid'}`} ref={section4Ref}>	

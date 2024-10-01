@@ -16,12 +16,12 @@ const btm_list=[
   { 
     icon: pad,
     title:'Full Non-Custodial control',
-    deets:'Charter will never hold any of your funds. Your money is completely stored on your device and cloud.',
+    deets:'Navigo will never hold any of your funds. Your money is completely stored on your device and cloud.',
   },
   { 
     icon:thumb,
     title:'Passkeys',
-    deets:'Charter stores your wallet cryptographic keys within your devices secure enclave.',
+    deets:'Navigo stores your wallet cryptographic keys within your devices secure enclave.',
   },
   { 
     icon: cloud,
@@ -38,7 +38,7 @@ const btm_list=[
             And that is not all.
           </h2>
           <p className={`${styles.sub_title} `}>
-            Your Charter wallet is packed with neat features that further assist you in operating your daily finances.
+            Your Navigo wallet is packed with neat features that further assist you in operating your daily finances.
           </p>
          </div>
          <div className={styles.list_container}>
@@ -52,7 +52,7 @@ const btm_list=[
          </div>
 
          <div className={styles.btm_container}>
-          <p>Charter is fully non-custodial, which means only you have control over your funds and private keys. </p>   
+          <p>Navigo is fully non-custodial, which means only you have control over your funds and private keys. </p>   
 
           <div className={`${styles.btm_content} ${'d_grid'}`}>
             <div className={styles.btm_list_container}>

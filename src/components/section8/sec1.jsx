@@ -4,7 +4,7 @@
  const Sec1 = ()=>{
  	return  <div className={`${styles.list_item} ${'d_grid'} ${styles.sec1}`}>
                 <h2 className={`${styles.sec1_title}`}>	
-                	<span className={styles.dim}>Managing your money should not be hard</span> — Charter makes it easy to share, schedule and secure your funds.
+                	<span className={styles.dim}>Managing your money should not be hard</span> — Navigo makes it easy to share, schedule and secure your funds.
                 </h2>	
 
                 <div className={styles.sec1_img}>

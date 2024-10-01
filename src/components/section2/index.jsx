@@ -15,7 +15,7 @@ const Section2=()=>{
 
 	 	<div className={styles.sub_txt}>
 	 		<p className={`${styles.sub_txt_title}  ${'sub_txt_title'}`}>
-	 			Introducing Charter Wallet
+	 			Introducing Navigo Wallet
 	 		</p>
 	 		<p className={`${styles.sub_txt_deets} ${'sub_txt_deets'}`}>A digital wallet that gives back your financial control and enables true affordable and instant worldwide payments.</p>
 	 	</div>
